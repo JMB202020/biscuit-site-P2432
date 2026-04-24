@@ -11,10 +11,70 @@ import '../styles/site.css';
 </head>
 <body>
 
-  <!-- Preview Banner -->
-    <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Fleet and District Dog Training Society</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2432&amp;name=Fleet%20and%20District%20Dog%20Training%20Society" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <!-- Preview banner -->
+  <div class="bg-[#34260A] text-white text-center text-sm py-2 px-4">
+    Preview redesign for Fleet and District Dog Training Society by
+    <a href="https://biscuitweb.co.uk/activate?id=P2432&name=Fleet%20and%20District%20Dog%20Training%20Society" class="underline font-semibold hover:text-amber-300">Biscuit Web</a>
+  </div>
 
-    <div>
+  <!-- Navigation -->
+  <header class="bg-white border-b border-[#C2BEB6] sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/P2432" class="font-display font-800 text-[#34260A] text-lg leading-tight">
+        Fleet &amp; District<br class="hidden sm:block" /> <span class="text-sm font-600">Dog Training Society</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[#1F1706]">
+        <a href="/P2432" class="hover:text-[#34260A] transition-colors">Home</a>
+        <a href="/P2432/about-us-html" class="text-[#34260A] border-b-2 border-[#34260A] pb-0.5">About Us</a>
+        <a href="/P2432/membership-html" class="hover:text-[#34260A] transition-colors">Membership</a>
+        <a href="/P2432/obedience-html" class="hover:text-[#34260A] transition-colors">Obedience</a>
+        <a href="/P2432/ringcraft-html" class="hover:text-[#34260A] transition-colors">Ringcraft</a>
+        <a href="/P2432/contact-html" class="bg-[#34260A] text-white px-4 py-1.5 rounded-full hover:bg-[#2A1E08] transition-colors">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden p-2 rounded text-[#34260A]" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#C2BEB6] px-4 py-4 flex flex-col gap-3 text-sm font-semibold text-[#1F1706]">
+      <a href="/P2432" class="hover:text-[#34260A]">Home</a>
+      <a href="/P2432/about-us-html" class="text-[#34260A]">About Us</a>
+      <a href="/P2432/membership-html" class="hover:text-[#34260A]">Membership</a>
+      <a href="/P2432/obedience-html" class="hover:text-[#34260A]">Obedience</a>
+      <a href="/P2432/ringcraft-html" class="hover:text-[#34260A]">Ringcraft</a>
+      <a href="/P2432/contact-html" class="hover:text-[#34260A]">Contact</a>
+    </div>
+  </header>
+
+  <!-- Page hero -->
+  <section class="relative overflow-hidden min-h-[280px] flex items-end">
+    <img
+      src="/P2432/images/about-us-html-0.jpg"
+      alt="About Fleet and District Dog Training Society"
+      class="absolute inset-0 w-full h-full object-cover"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-10 w-full">
+      <h1 class="text-white text-4xl font-800">About Us</h1>
+      <p class="text-white/80 mt-2">Your local dog training club since 1971</p>
+    </div>
+  </section>
+
+  <!-- About content -->
+  <section class="bg-[#F5F4F3] py-16 px-4">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-[#34260A] text-2xl font-800 mb-4">About the Club</h2>
+        <p class="text-[#1F1706] mb-4">The club was founded in 1971 and is registered by The Kennel Club.</p>
+        <p class="text-[#1F1706] mb-4">We have a dedicated and enthusiastic committee who run the club on a purely voluntary basis. All proceeds from courses and ringcraft are used to run and maintain the club, and we make substantial donations to dog charities too.</p>
+        <p class="text-[#1F1706] mb-4">Our instructors are experienced people, who offer sympathetic and kind training methods, encouraging members to achieve as much with their dogs as they wish.</p>
+        <p class="text-[#1F1706]">You can pop along to any training class, without your dog, just to watch — we'd be delighted to meet you.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="/P2432/membership-html" class="bg-[#34260A] text-white font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-[#2A1E08] transition-colors">Join the Club</a>
+          <a href="/P2432/contact-html" class="border border-[#34260A] text-[#34260A] font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-[#EFEEEB] transition-colors">Contact Us</a>
+        </div>
+      </div>
+      <div>
         <img
           src="/P2432/images/4564.png"
           alt="Fleet and District Dog Training Society committee"
@@ -68,7 +128,7 @@ import '../styles/site.css';
       <div>
         <h3 class="font-800 text-lg mb-3">Pages</h3>
         <ul class="space-y-1 text-sm text-white/70">
-          <li><a href="/P2432/" class="hover:text-white">Home</a></li>
+          <li><a href="/P2432" class="hover:text-white">Home</a></li>
           <li><a href="/P2432/about-us-html" class="hover:text-white">About Us</a></li>
           <li><a href="/P2432/membership-html" class="hover:text-white">Membership</a></li>
           <li><a href="/P2432/obedience-html" class="hover:text-white">Obedience</a></li>

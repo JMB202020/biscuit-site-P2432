@@ -3,8 +3,6 @@ import '../styles/site.css';
 const site = {
   name: 'Fleet and District Dog Training Society',
   address: 'Crookham War Memorial Hall, Sandy Lane, Church Crookham, Fleet, Hampshire GU52 8LD',
-  email: 'fleetdogtrainingsociety@gmail.com',
-  phone: '01252 675 912',
 };
 ---
 <!DOCTYPE html>
@@ -12,146 +10,239 @@ const site = {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fleet and District Dog Training Society – Dog Training Fleet Hampshire</title>
+  <title>Fleet and District Dog Training Society | Dog Training Fleet Hampshire</title>
   <meta name="description" content="Friendly dog training classes in Fleet, Hampshire since 1971. Obedience on Wednesdays and Ringcraft on Tuesdays at Crookham War Memorial Hall." />
   <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
 
-  <!-- Preview Banner -->
-    <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Fleet and District Dog Training Society</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2432&amp;name=Fleet%20and%20District%20Dog%20Training%20Society" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Fleet and District Dog Training Society</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2432&amp;name=Fleet%20and%20District%20Dog%20Training%20Society" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-    <div class="hidden md:flex flex-col gap-4">
+  <!-- Navigation -->
+  <header class="bg-[#1e3558] border-b border-[#162845] sticky top-[41px] z-40">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/P2432" class="font-display font-extrabold text-white text-base leading-tight">
+        Fleet &amp; District<br /><span class="text-[#fbbf24] text-xs font-semibold tracking-wide uppercase">Dog Training Society</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-white/80">
+        <a href="/P2432" class="text-white border-b-2 border-[#d97706] pb-0.5">Home</a>
+        <a href="/P2432/about-us-html" class="hover:text-white transition-colors">About Us</a>
+        <a href="/P2432/membership-html" class="hover:text-white transition-colors">Membership</a>
+        <a href="/P2432/obedience-html" class="hover:text-white transition-colors">Obedience</a>
+        <a href="/P2432/ringcraft-html" class="hover:text-white transition-colors">Ringcraft</a>
+        <a href="/P2432/contact-html" class="bg-[#d97706] text-white px-4 py-1.5 rounded-full hover:bg-[#b45309] transition-colors">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden p-2 rounded text-white" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#162845] border-t border-white/10 px-4 py-4 flex flex-col gap-3 text-sm font-semibold text-white/80">
+      <a href="/P2432" class="text-white">Home</a>
+      <a href="/P2432/about-us-html" class="hover:text-white">About Us</a>
+      <a href="/P2432/membership-html" class="hover:text-white">Membership</a>
+      <a href="/P2432/obedience-html" class="hover:text-white">Obedience</a>
+      <a href="/P2432/ringcraft-html" class="hover:text-white">Ringcraft</a>
+      <a href="/P2432/contact-html" class="hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[#1e3558] overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-12 md:py-0 grid md:grid-cols-2 gap-0 items-stretch">
+      <!-- Left: text -->
+      <div class="flex flex-col justify-center py-12 md:py-16 pr-0 md:pr-10">
+        <span class="inline-flex items-center gap-1.5 bg-[#d97706] text-white text-xs font-bold px-3 py-1 rounded-full mb-5 w-fit">📍 Fleet, Hampshire</span>
+        <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">Friendly Dog Training in Fleet</h1>
+        <p class="text-white/80 text-lg mb-6">Your local dog training club for Fleet, Church Crookham (Hart) and North Hampshire. Founded in 1971.</p>
+        <ul class="space-y-2 text-white/80 mb-8 text-sm">
+          <li class="flex items-center gap-2"><span class="text-[#fbbf24]">✓</span> Looking for friendly dog training classes in the evenings?</li>
+          <li class="flex items-center gap-2"><span class="text-[#fbbf24]">✓</span> Like to join pet dog training classes with local people?</li>
+          <li class="flex items-center gap-2"><span class="text-[#fbbf24]">✓</span> Want to show your pedigree dog?</li>
+        </ul>
+        <div class="flex flex-wrap gap-3">
+          <a href="/P2432/obedience-html" class="bg-[#d97706] text-white font-bold px-6 py-3 rounded-full hover:bg-[#b45309] transition-colors">Obedience Classes</a>
+          <a href="/P2432/ringcraft-html" class="bg-white/10 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/20 transition-colors border border-white/20">Ringcraft Classes</a>
+        </div>
+      </div>
+      <!-- Right: photo -->
+      <div class="relative hidden md:block min-h-[420px] overflow-hidden">
         <img
-          src="/P2432/images/puppy-class-number-3-june-2024-cropped-o.jpg"
-          alt="Puppy training class"
-          width="800"
-          height="350"
-          class="w-full rounded-xl object-cover aspect-video"
+          src="/P2432/images/home-fleet-and-district-dog-training-society.jpg"
+          alt="Dog training class at Fleet and District Dog Training Society"
+          class="absolute inset-0 w-full h-full object-cover"
           fetchpriority="high"
         />
+        <div class="absolute inset-0 bg-black/30"></div>
       </div>
     </div>
   </section>
 
-  <!-- Quick info strip -->
-  <section class="bg-[#34260A] text-white py-4 px-4">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm font-semibold text-center">
-      <span>🐾 Obedience — Wednesdays</span>
-      <span>🏆 Ringcraft — Tuesdays</span>
+  <!-- Credentials strip -->
+  <section class="bg-[#d97706] text-white py-4 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-semibold text-center">
+      <span>🐾 Obedience on Wednesdays</span>
+      <span>🏆 Ringcraft on Tuesdays</span>
       <span>📍 Crookham War Memorial Hall, Fleet</span>
-      <span>📞 <a href="tel:01252675912" class="underline hover:text-amber-300">01252 675 912</a></span>
+      <span>🎖️ Founded 1971</span>
     </div>
   </section>
 
-  <!-- About / Intro -->
-  <section class="bg-[#F5F4F3] py-16 px-4">
+  <!-- About the Club -->
+  <section class="bg-[#f9f7f4] py-16 px-4">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 class="text-[#34260A] text-3xl font-800 mb-4">About the Club</h2>
-        <p class="text-[#1F1706] mb-4">Fleet and District Dog Training Society was founded in 1971 and offers basic dog training (Obedience on Wednesdays) and show ring training (Ringcraft, on Tuesdays).</p>
-        <p class="text-[#1F1706] mb-4">Our instructors are experienced people, who offer sympathetic and kind training methods, encouraging members to achieve as much with their dogs as they wish.</p>
-        <p class="text-[#1F1706] mb-6">We have a dedicated and enthusiastic committee who run the club on a purely voluntary basis. All proceeds from courses and ringcraft are used to run and maintain the club, and we make substantial donations to dog charities too.</p>
-        <ul class="space-y-2 text-[#1F1706]">
-          <li class="flex items-start gap-2"><span class="text-[#34260A] font-bold mt-0.5">✓</span> Looking for friendly dog training classes in the evenings?</li>
-          <li class="flex items-start gap-2"><span class="text-[#34260A] font-bold mt-0.5">✓</span> Like to join pet dog training classes with local people?</li>
-          <li class="flex items-start gap-2"><span class="text-[#34260A] font-bold mt-0.5">✓</span> Want to show your pedigree dog?</li>
-        </ul>
-        <p class="mt-6 text-[#1F1706] italic">You can pop along to any training class, without your dog, just to watch — we'd be delighted to meet you.</p>
+        <span class="text-[#d97706] text-sm font-bold uppercase tracking-wider mb-2 block">About the Club</span>
+        <h2 class="text-[#1e3558] text-3xl font-extrabold mb-5">Friendly, Local, and Run by Volunteers</h2>
+        <p class="text-[#374151] mb-4">Fleet and District Dog Training Society was founded in 1971 and offers basic dog training (Obedience on Wednesdays) and show ring training (Ringcraft, on Tuesdays).</p>
+        <p class="text-[#374151] mb-4">Our instructors are experienced people, who offer sympathetic and kind training methods, encouraging members to achieve as much with their dogs as they wish.</p>
+        <p class="text-[#374151] mb-6">We have a dedicated and enthusiastic committee who run the club on a purely voluntary basis. All proceeds from courses and ringcraft are used to run and maintain the club, and we make substantial donations to dog charities too.</p>
+        <p class="text-[#1e3558] font-semibold italic">You can pop along to any training class, without your dog just to watch. We'd be delighted to meet you.</p>
       </div>
-      <div class="flex flex-col gap-4 items-center">
+      <div class="flex flex-col gap-5 items-center">
         <img
           src="/P2432/images/kcgc-july-2025-bronze-orig.jpg"
-          alt="Kennel Club Good Citizen Bronze award"
+          alt="Kennel Club Good Citizen Bronze award at Fleet and District Dog Training Society, July 2025"
           width="600"
           height="450"
           loading="lazy"
-          class="rounded-xl w-full object-cover"
+          class="rounded-xl w-full object-cover shadow-md"
         />
-        <div class="flex gap-4">
-          <img src="/P2432/images/6606095.png" alt="Award badge" width="150" height="90" loading="lazy" class="rounded" />
-          <img src="/P2432/images/7242448.png" alt="Award badge" width="150" height="90" loading="lazy" class="rounded" />
+        <div class="flex gap-4 justify-center">
+          <img src="/P2432/images/6606095.png" alt="Club accreditation badge" width="150" height="90" loading="lazy" class="rounded object-contain" />
+          <img src="/P2432/images/7242448.png" alt="Club accreditation badge" width="150" height="90" loading="lazy" class="rounded object-contain" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Classes -->
-  <section class="bg-[#EFEEEB] py-16 px-4">
+  <!-- Training Programmes -->
+  <section class="bg-[#f0ede8] py-16 px-4">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-[#34260A] text-3xl font-800 text-center mb-10">Our Training Classes</h2>
+      <span class="text-[#d97706] text-sm font-bold uppercase tracking-wider mb-2 block text-center">Training Programmes</span>
+      <h2 class="text-[#1e3558] text-3xl font-extrabold text-center mb-10">Our Classes</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Ringcraft -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#C2BEB6]">
-          <div class="relative overflow-hidden aspect-video">
-            <img src="/P2432/images/ringcraft-html-0.jpg" alt="Ringcraft training class" class="w-full h-full object-cover" loading="lazy" width="752" height="160" />
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="absolute bottom-4 left-4">
-              <span class="bg-[#34260A] text-white text-xs font-semibold px-3 py-1 rounded-full">Tuesdays</span>
-            </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#d1cfc9] flex flex-col">
+          <div class="bg-[#1e3558] px-6 py-5 flex items-center justify-between">
+            <h3 class="text-white text-xl font-extrabold">Ringcraft</h3>
+            <span class="bg-[#d97706] text-white text-xs font-bold px-3 py-1 rounded-full">Tuesdays</span>
           </div>
-          <div class="p-6">
-            <h3 class="text-[#34260A] text-xl font-800 mb-3">Ringcraft</h3>
-            <p class="text-[#1F1706] mb-4">Learn to handle your dog for the show ring with experienced trainers. Lots of tips from experienced handlers too!</p>
-            <a href="/P2432/ringcraft-html" class="inline-block bg-[#34260A] text-white font-semibold px-5 py-2 rounded-full text-sm hover:bg-[#2A1E08] transition-colors">Learn More</a>
+          <div class="p-6 flex flex-col flex-1">
+            <p class="text-[#374151] mb-4 flex-1">Learn to handle your dog for the show ring with experienced trainers. Lots of tips from experienced handlers too!</p>
+            <a href="/P2432/ringcraft-html" class="inline-block bg-[#1e3558] text-white font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-[#162845] transition-colors w-fit">Learn More</a>
           </div>
         </div>
         <!-- Obedience -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#C2BEB6]">
-          <div class="relative overflow-hidden aspect-video">
-            <img src="/P2432/images/obedience-html-0.jpg" alt="Obedience training class" class="w-full h-full object-cover" loading="lazy" width="752" height="160" />
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="absolute bottom-4 left-4">
-              <span class="bg-[#34260A] text-white text-xs font-semibold px-3 py-1 rounded-full">Wednesdays</span>
-            </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#d1cfc9] flex flex-col">
+          <div class="bg-[#1e3558] px-6 py-5 flex items-center justify-between">
+            <h3 class="text-white text-xl font-extrabold">Obedience</h3>
+            <span class="bg-[#d97706] text-white text-xs font-bold px-3 py-1 rounded-full">Wednesdays</span>
           </div>
-          <div class="p-6">
-            <h3 class="text-[#34260A] text-xl font-800 mb-3">Obedience</h3>
-            <p class="text-[#1F1706] mb-2">Forge a strong bond with your dog, for a more fulfilling and rewarding relationship. Small classes with experienced trainers.</p>
-            <p class="text-[#34260A] font-semibold text-sm mb-4">Now taking bookings — book early to avoid disappointment.</p>
-            <a href="/P2432/obedience-html" class="inline-block bg-[#34260A] text-white font-semibold px-5 py-2 rounded-full text-sm hover:bg-[#2A1E08] transition-colors">Learn More</a>
+          <div class="p-6 flex flex-col flex-1">
+            <p class="text-[#374151] mb-3">Forge a strong bond with your dog, for a more fulfilling and rewarding relationship. Small classes with experienced trainers.</p>
+            <p class="text-[#d97706] font-bold text-sm mb-4">Now taking bookings for the March course. Book early to avoid disappointment.</p>
+            <a href="/P2432/obedience-html" class="inline-block bg-[#1e3558] text-white font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-[#162845] transition-colors w-fit">Learn More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Find us -->
-  <section class="bg-[#F5F4F3] py-16 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-[#34260A] text-3xl font-800 mb-4">Find Us</h2>
-      <p class="text-[#1F1706] text-lg mb-6">Crookham War Memorial Hall<br />Sandy Lane, Church Crookham, Fleet, Hampshire <strong>GU52 8LD</strong></p>
-      <a href="/P2432/contact-html" class="inline-block bg-[#34260A] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#2A1E08] transition-colors">Get in Touch</a>
+  <!-- Our Methods -->
+  <section class="bg-[#1e3558] py-16 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="text-[#fbbf24] text-sm font-bold uppercase tracking-wider mb-2 block">Our Approach</span>
+      <h2 class="text-white text-3xl font-extrabold mb-10">Kind, Sympathetic Training</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-white/10 rounded-2xl p-6 text-center">
+          <div class="text-3xl mb-3">🐶</div>
+          <h3 class="text-white font-bold mb-2">Experienced Instructors</h3>
+          <p class="text-white/70 text-sm">Our instructors are experienced people who offer sympathetic and kind training methods.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 text-center">
+          <div class="text-3xl mb-3">🤝</div>
+          <h3 class="text-white font-bold mb-2">Voluntary Committee</h3>
+          <p class="text-white/70 text-sm">Run entirely by a dedicated and enthusiastic voluntary committee, for the love of dogs.</p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 text-center">
+          <div class="text-3xl mb-3">❤️</div>
+          <h3 class="text-white font-bold mb-2">Supporting Dog Charities</h3>
+          <p class="text-white/70 text-sm">We make substantial donations to dog charities from our courses and ringcraft proceeds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find Us / Contact -->
+  <section class="bg-[#f9f7f4] py-16 px-4">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <span class="text-[#d97706] text-sm font-bold uppercase tracking-wider mb-2 block">Find Us</span>
+        <h2 class="text-[#1e3558] text-3xl font-extrabold mb-4">Come and Watch a Class</h2>
+        <p class="text-[#374151] mb-4">You can pop along to any training class, without your dog just to watch. We'd be delighted to meet you.</p>
+        <div class="bg-[#1e3558] text-white rounded-2xl p-6 text-sm leading-relaxed">
+          <p class="font-bold text-base mb-1">Crookham War Memorial Hall</p>
+          <p>Sandy Lane</p>
+          <p>Church Crookham</p>
+          <p>Fleet</p>
+          <p>Hampshire GU52 8LD</p>
+        </div>
+        <div class="mt-4 space-y-1 text-sm text-[#374151]">
+          <p><span class="font-semibold text-[#1e3558]">Obedience:</span> Wednesdays evenings</p>
+          <p><span class="font-semibold text-[#1e3558]">Ringcraft:</span> Tuesdays evenings</p>
+        </div>
+      </div>
+      <div>
+        <span class="text-[#d97706] text-sm font-bold uppercase tracking-wider mb-2 block">Get in Touch</span>
+        <h2 class="text-[#1e3558] text-3xl font-extrabold mb-5">Send Us a Message</h2>
+        <form action="https://formspree.io/f/mwvaaojq" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-semibold text-[#374151] mb-1">Your name</label>
+            <input id="name" name="name" type="text" required class="w-full border border-[#d1cfc9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3558]" placeholder="Jane Smith" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-semibold text-[#374151] mb-1">Email address</label>
+            <input id="email" name="email" type="email" required class="w-full border border-[#d1cfc9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3558]" placeholder="jane@example.com" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-[#374151] mb-1">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full border border-[#d1cfc9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3558]" placeholder="Tell us about your dog and what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="bg-[#d97706] text-white font-bold px-6 py-3 rounded-full hover:bg-[#b45309] transition-colors w-full">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#2A1E08] text-white py-12 px-4">
+  <footer class="bg-[#162845] text-white py-12 px-4">
     <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-8">
       <div>
-        <h3 class="font-800 text-lg mb-3">Fleet &amp; District Dog Training Society</h3>
-        <p class="text-white/70 text-sm">Crookham War Memorial Hall<br />Sandy Lane, Church Crookham<br />Fleet, Hampshire GU52 8LD</p>
-        <p class="text-white/70 text-sm mt-2">
-          <a href="tel:01252675912" class="hover:text-white">01252 675 912</a><br />
-          <a href="mailto:fleetdogtrainingsociety@gmail.com" class="hover:text-white break-all">fleetdogtrainingsociety@gmail.com</a>
+        <h3 class="font-extrabold text-lg mb-3">Fleet &amp; District Dog Training Society</h3>
+        <p class="text-white/60 text-sm">
+          Crookham War Memorial Hall<br />
+          Sandy Lane, Church Crookham<br />
+          Fleet, Hampshire GU52 8LD
         </p>
+        <p class="text-white/60 text-sm mt-3">Founded 1971</p>
       </div>
       <div>
-        <h3 class="font-800 text-lg mb-3">Pages</h3>
-        <ul class="space-y-1 text-sm text-white/70">
-          <li><a href="/P2432/" class="hover:text-white">Home</a></li>
-          <li><a href="/P2432/about-us-html" class="hover:text-white">About Us</a></li>
-          <li><a href="/P2432/membership-html" class="hover:text-white">Membership</a></li>
-          <li><a href="/P2432/obedience-html" class="hover:text-white">Obedience</a></li>
-          <li><a href="/P2432/ringcraft-html" class="hover:text-white">Ringcraft</a></li>
-          <li><a href="/P2432/contact-html" class="hover:text-white">Contact</a></li>
+        <h3 class="font-extrabold text-lg mb-3">Pages</h3>
+        <ul class="space-y-1 text-sm text-white/60">
+          <li><a href="/P2432" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="/P2432/about-us-html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/P2432/membership-html" class="hover:text-white transition-colors">Membership</a></li>
+          <li><a href="/P2432/obedience-html" class="hover:text-white transition-colors">Obedience</a></li>
+          <li><a href="/P2432/ringcraft-html" class="hover:text-white transition-colors">Ringcraft</a></li>
+          <li><a href="/P2432/contact-html" class="hover:text-white transition-colors">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="font-800 text-lg mb-3">Classes</h3>
-        <p class="text-white/70 text-sm mb-1">🐾 Obedience — Wednesdays</p>
-        <p class="text-white/70 text-sm mb-4">🏆 Ringcraft — Tuesdays</p>
-        <p class="text-white/70 text-sm">Founded 1971 · Kennel Club registered</p>
+        <h3 class="font-extrabold text-lg mb-3">Classes</h3>
+        <p class="text-white/60 text-sm mb-1">🐾 Obedience on Wednesdays</p>
+        <p class="text-white/60 text-sm mb-4">🏆 Ringcraft on Tuesdays</p>
+        <p class="text-white/60 text-sm">Crookham War Memorial Hall<br />Fleet, Hampshire</p>
       </div>
     </div>
     <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-white/10 text-center text-white/40 text-xs">
