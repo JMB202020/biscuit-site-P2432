@@ -11,97 +11,10 @@ import '../styles/site.css';
 </head>
 <body>
 
-  <!-- Preview banner -->
-  <div class="bg-[#34260A] text-white text-center text-sm py-2 px-4">
-    Preview redesign for Fleet and District Dog Training Society by
-    <a href="https://biscuitweb.co.uk/activate?id=P2432&name=Fleet%20and%20District%20Dog%20Training%20Society" class="underline font-semibold hover:text-amber-300">Biscuit Web</a>
-  </div>
+  <!-- Preview Banner -->
+    <div style="background:#B45309;color:white;padding:10px 16px;text-align:center;font-size:14px;position:sticky;top:0;z-index:50"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><span>Preview redesign for <strong>Fleet and District Dog Training Society</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2432&amp;name=Fleet%20and%20District%20Dog%20Training%20Society" style="display:inline-flex;align-items:center;padding:4px 16px;background:white;color:#B45309;font-weight:700;font-size:12px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-  <!-- Navigation -->
-  <header class="bg-white border-b border-[#C2BEB6] sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="/P2432/" class="font-display font-800 text-[#34260A] text-lg leading-tight">
-        Fleet &amp; District<br class="hidden sm:block" /> <span class="text-sm font-600">Dog Training Society</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[#1F1706]">
-        <a href="/P2432/" class="hover:text-[#34260A] transition-colors">Home</a>
-        <a href="/P2432/about-us-html" class="hover:text-[#34260A] transition-colors">About Us</a>
-        <a href="/P2432/membership-html" class="hover:text-[#34260A] transition-colors">Membership</a>
-        <a href="/P2432/obedience-html" class="text-[#34260A] border-b-2 border-[#34260A] pb-0.5">Obedience</a>
-        <a href="/P2432/ringcraft-html" class="hover:text-[#34260A] transition-colors">Ringcraft</a>
-        <a href="/P2432/contact-html" class="bg-[#34260A] text-white px-4 py-1.5 rounded-full hover:bg-[#2A1E08] transition-colors">Contact</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden p-2 rounded text-[#34260A]" aria-label="Open menu">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#C2BEB6] px-4 py-4 flex flex-col gap-3 text-sm font-semibold text-[#1F1706]">
-      <a href="/P2432/" class="hover:text-[#34260A]">Home</a>
-      <a href="/P2432/about-us-html" class="hover:text-[#34260A]">About Us</a>
-      <a href="/P2432/membership-html" class="hover:text-[#34260A]">Membership</a>
-      <a href="/P2432/obedience-html" class="text-[#34260A]">Obedience</a>
-      <a href="/P2432/ringcraft-html" class="hover:text-[#34260A]">Ringcraft</a>
-      <a href="/P2432/contact-html" class="hover:text-[#34260A]">Contact</a>
-    </div>
-  </header>
-
-  <!-- Page hero -->
-  <section class="relative overflow-hidden min-h-[300px] flex items-end">
-    <img
-      src="/P2432/images/obedience-html-0.jpg"
-      alt="Dog obedience training classes"
-      class="absolute inset-0 w-full h-full object-cover"
-      fetchpriority="high"
-    />
-    <div class="absolute inset-0 bg-black/70"></div>
-    <div class="relative z-10 max-w-6xl mx-auto px-6 py-10 w-full">
-      <h1 class="text-white text-4xl font-800">Dog Obedience Training</h1>
-      <p class="text-white/80 mt-2">Every Wednesday at Crookham War Memorial Hall, Fleet</p>
-    </div>
-  </section>
-
-  <!-- Puppy class photo -->
-  <section class="bg-[#F5F4F3] py-10 px-4">
-    <div class="max-w-5xl mx-auto">
-      <img
-        src="/P2432/images/puppy-class-number-3-june-2024-cropped-o.jpg"
-        alt="Puppy obedience class at Fleet Dog Training Society"
-        width="1704"
-        height="748"
-        loading="lazy"
-        class="rounded-2xl w-full object-cover"
-      />
-    </div>
-  </section>
-
-  <!-- Beginners & Intermediate -->
-  <section class="bg-[#F5F4F3] pb-16 px-4">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-
-      <!-- Beginners -->
-      <div class="bg-white rounded-2xl border border-[#C2BEB6] overflow-hidden">
-        <div class="bg-[#34260A] px-6 py-4">
-          <h2 class="text-white text-xl font-800">Beginners</h2>
-        </div>
-        <div class="p-6">
-          <p class="text-[#1F1706] mb-4">Learn the basics of puppy and dog training in a secure, relaxed, supportive and friendly environment.</p>
-          <p class="text-[#1F1706] mb-4">You and your dog will learn the essential skills every dog (and owner) needs, including:</p>
-          <ul class="space-y-2 mb-5">
-            <li class="flex items-start gap-2 text-[#1F1706]">
-              <span class="text-[#34260A] font-bold mt-0.5">✓</span> Walking on a lead
-            </li>
-            <li class="flex items-start gap-2 text-[#1F1706]">
-              <span class="text-[#34260A] font-bold mt-0.5">✓</span> Recall
-            </li>
-            <li class="flex items-start gap-2 text-[#1F1706]">
-              <span class="text-[#34260A] font-bold mt-0.5">✓</span> Sit, stay and down commands
-            </li>
-          </ul>
-          <div class="bg-[#EFEEEB] rounded-lg p-4 text-sm text-[#1F1706]">
-            Every owner and dog satisfactorily completing the course will be awarded a <strong>certificate and rosette</strong>. You'll then have the option of attending our follow-on classes.
-          </div>
-        </div>
-        <div class="px-6 pb-4">
+    <div class="px-6 pb-4">
           <img
             src="/P2432/images/twingo-blured-background.jpg"
             alt="Dog in obedience training"

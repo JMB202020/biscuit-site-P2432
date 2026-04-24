@@ -11,76 +11,10 @@ import '../styles/site.css';
 </head>
 <body>
 
-  <!-- Preview banner -->
-  <div class="bg-[#34260A] text-white text-center text-sm py-2 px-4">
-    Preview redesign for Fleet and District Dog Training Society by
-    <a href="https://biscuitweb.co.uk/activate?id=P2432&name=Fleet%20and%20District%20Dog%20Training%20Society" class="underline font-semibold hover:text-amber-300">Biscuit Web</a>
-  </div>
+  <!-- Preview Banner -->
+    <div style="background:#B45309;color:white;padding:10px 16px;text-align:center;font-size:14px;position:sticky;top:0;z-index:50"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><span>Preview redesign for <strong>Fleet and District Dog Training Society</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2432&amp;name=Fleet%20and%20District%20Dog%20Training%20Society" style="display:inline-flex;align-items:center;padding:4px 16px;background:white;color:#B45309;font-weight:700;font-size:12px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-  <!-- Navigation -->
-  <header class="bg-white border-b border-[#C2BEB6] sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="/P2432/" class="font-display font-800 text-[#34260A] text-lg leading-tight">
-        Fleet &amp; District<br class="hidden sm:block" /> <span class="text-sm font-600">Dog Training Society</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[#1F1706]">
-        <a href="/P2432/" class="hover:text-[#34260A] transition-colors">Home</a>
-        <a href="/P2432/about-us-html" class="hover:text-[#34260A] transition-colors">About Us</a>
-        <a href="/P2432/membership-html" class="hover:text-[#34260A] transition-colors">Membership</a>
-        <a href="/P2432/obedience-html" class="hover:text-[#34260A] transition-colors">Obedience</a>
-        <a href="/P2432/ringcraft-html" class="hover:text-[#34260A] transition-colors">Ringcraft</a>
-        <a href="/P2432/contact-html" class="bg-[#34260A] text-white px-4 py-1.5 rounded-full">Contact</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden p-2 rounded text-[#34260A]" aria-label="Open menu">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#C2BEB6] px-4 py-4 flex flex-col gap-3 text-sm font-semibold text-[#1F1706]">
-      <a href="/P2432/" class="hover:text-[#34260A]">Home</a>
-      <a href="/P2432/about-us-html" class="hover:text-[#34260A]">About Us</a>
-      <a href="/P2432/membership-html" class="hover:text-[#34260A]">Membership</a>
-      <a href="/P2432/obedience-html" class="hover:text-[#34260A]">Obedience</a>
-      <a href="/P2432/ringcraft-html" class="hover:text-[#34260A]">Ringcraft</a>
-      <a href="/P2432/contact-html" class="text-[#34260A]">Contact</a>
-    </div>
-  </header>
-
-  <!-- Page hero -->
-  <section class="relative overflow-hidden min-h-[280px] flex items-end">
-    <img
-      src="/P2432/images/contact-html-0.jpg"
-      alt="Contact Fleet and District Dog Training Society"
-      class="absolute inset-0 w-full h-full object-cover"
-      fetchpriority="high"
-    />
-    <div class="absolute inset-0 bg-black/70"></div>
-    <div class="relative z-10 max-w-6xl mx-auto px-6 py-10 w-full">
-      <h1 class="text-white text-4xl font-800">Contact Us</h1>
-      <p class="text-white/80 mt-2">We'd love to hear from you</p>
-    </div>
-  </section>
-
-  <!-- Contact content -->
-  <section class="bg-[#F5F4F3] py-16 px-4">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-
-      <!-- Form -->
-      <div>
-        <h2 class="text-[#34260A] text-2xl font-800 mb-3">Send Us a Message</h2>
-        <p class="text-[#1F1706] mb-6">To contact us, please fill in the form and we'll get back to you very soon. Alternatively, you can pop along to any training class, without your dog to watch — we'd be delighted to meet you.</p>
-
-        <form action="https://formspree.io/f/mwvaaojq" method="POST" class="space-y-4">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="first-name" class="block text-sm font-semibold text-[#1F1706] mb-1">First name *</label>
-              <input type="text" id="first-name" name="first_name" required class="w-full border border-[#C2BEB6] rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#34260A]" />
-            </div>
-            <div>
-              <label for="last-name" class="block text-sm font-semibold text-[#1F1706] mb-1">Last name *</label>
-              <input type="text" id="last-name" name="last_name" required class="w-full border border-[#C2BEB6] rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#34260A]" />
-            </div>
-          </div>
-          <div>
+    <div>
             <label for="email" class="block text-sm font-semibold text-[#1F1706] mb-1">Email *</label>
             <input type="email" id="email" name="email" required class="w-full border border-[#C2BEB6] rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#34260A]" />
           </div>
